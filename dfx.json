@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ganesh_backend": {
+      "main": "src/ganesh_backend/main.mo",
+      "type": "motoko"
+    },
+    "ganesh_frontend": {
+      "dependencies": [
+        "ganesh_backend"
+      ],
+      "source": [
+        "src/ganesh_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ganesh_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
